@@ -1,9 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 /*---------------------------------------------------------------------------------------*/
 /*
 font-family: "Roboto", sans-serif;
 font-weight: 100 <-> 900;
 font-style: normal;
+*/
+
+/*
+font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
 */
 /*---------------------------------------------------------------------------------------*/
 * {
@@ -41,7 +49,7 @@ ul {
 .border {
     width: 30.5rem;
     background-color: lightgray;
-    padding: 10rem 2rem 5rem 2rem;
+    padding: 2rem 2rem 5rem 2rem;
     border-top: 4px solid rgba(105, 105, 105, .66);
     border-left: 20px solid rgba(105, 105, 105, .05);
     border-right: 20px solid rgba(105, 105, 105, .05);
@@ -104,4 +112,15 @@ ul {
     letter-spacing: 0.5rem;
     font-weight: 700;
     font-size: 1.5rem;
+}
+
+.brand {
+    margin-bottom: 100px;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 1rem;
+    color: #e9b857
 }
