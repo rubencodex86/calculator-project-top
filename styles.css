@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/*---------------------------------------------------------------------------------------*/
+/*
+font-family: "Roboto", sans-serif;
+font-weight: 100 <-> 900;
+font-style: normal;
+*/
+/*---------------------------------------------------------------------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+/*---------------------------------------------------------------------------------------*/
+.container,
+.row ul,
+.row ul li,
+.display {
+    display: flex;
+}
+
+.container {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("./images/calculator-near-pins-sticky-notes.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.border {
+    width: 30.5rem;
+    background-color: lightgray;
+    padding: 10rem 2rem 5rem 2rem;
+    border-top: 4px solid rgba(105, 105, 105, .66);
+    border-left: 20px solid rgba(105, 105, 105, .05);
+    border-right: 20px solid rgba(105, 105, 105, .05);
+    border-bottom: 30px solid rgba(105, 105, 105, .1);
+    border-radius: 6px;
+    box-shadow: 1px 8px 20px 8px rgba(105, 105, 105, 1);
+
+}
+
+.row ul{
+    flex-wrap: wrap;
+}
+
+.row ul li {
+    width: 7rem;
+    height: 4rem;
+    justify-content: center;
+    align-items: center;
+    background-color: #6a646d;
+    border-radius: 10px;
+    margin: 5px;
+    box-shadow: -1px 4px 5px black;
+    cursor: pointer;
+    color: whitesmoke;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.7rem;
+}
+
+.row ul li:hover {
+    box-shadow: -1px 4px 5px #b8b0be;
+}
+
+.display {
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: end;
+    width: 100%;
+    height: 15vh;
+    background-color: #90aaa7;
+    margin-bottom: 3rem;
+    border: 3px solid #4f6564;
+}
+
+#result,
+#calculation {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+}
+
+#result {
+    padding: 1rem;
+    font-weight: 900;
+    font-size: 3rem;
+}
+
+#calculation {
+    padding-right: 0.5rem;
+    letter-spacing: 0.5rem;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
