@@ -48,3 +48,16 @@ operate(20, 0, '/');
 */
 
 //5.
+function populate() {
+    let numBtn = document.querySelectorAll('.num-button');
+
+    // console.log(numBtn)
+
+    numBtn.forEach(btn => {
+        btn.addEventListener('click', () => {
+            console.log(btn.innerText);
+        });
+    })
+}
+
+populate();
